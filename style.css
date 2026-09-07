@@ -2,30 +2,123 @@
   --color-linea: #1e3a8a;
   --color-fondo: #a9e8f2;
   --color-naranja: #f7941d;
+  --fuente-titulos: "Luckiest Guy";
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background-color: var(--color-fondo, #a9e8f2);
+  margin: 0;
 }
 
-.platillo {
+.menu {
+  max-width: 700px;
+}
+.menu__titulo-fila {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.platillo__linea {
+.menu__lineas {
   flex: 1;
-  border-bottom: 3px dotted var(--color-linea, #1e3a8a);
+  min-width: 20px;
+  border-bottom: 10px solid var(--color-naranja, #f7941d);
+}
+.menu__lineas--izquierda {
+  border-radius: 0px 999px 999px 0;
+}
+.menu__lineas--derecha {
+  border-radius: 999px 0 0 999px;
+}
+.menu__titulo {
+  font-family: var(--fuente-titulos);
+  color: #ffffff;
+  font-weight: 400;
+  text-align: center;
+  font-size: 3.5rem;
+  text-shadow: 1px 2px 4px #000000a1;
 }
 
 .categoria__nombre {
   display: inline-block;
-  border-radius: 999px;
+  padding: 8px 40px;
+  border-radius: 0px 999px 999px 0px;
   background-color: var(--color-naranja);
-  color: #fff;
-  padding: 8px 24px;
+  color: #ffffff;
+  font-size: 2.8rem;
+  font-weight: 400;
+  font-family: var(--fuente-titulos);
+}
+.categoria__encabezado-precios span {
+  width: 45px;
+  text-align: right;
+}
+
+.platillo {
+  display: flex;
+  align-items: baseline;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+  padding-bottom: 8px;
+
+  color: #122b70;
+}
+.platillo__nombre {
+  margin-right: 10px;
+}
+
+.platillo__nota {
+  display: block;
+  font-size: 1rem;
+}
+
+.platillo__linea {
+  flex: 1;
+  border-bottom: 4px dotted var(--color-linea, #1e3a8a);
+  margin-bottom: 4px;
+  min-width: 20px;
+  font-family: sans-serif;
+}
+
+.categoria__encabezado-precios {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #122b70;
+}
+.platillo__precio {
+  width: 45px;
+  text-align: right;
 }
 
 .platillo__precios {
   display: flex;
   gap: 20px;
+}
+.platillo__precios span {
+  width: 45px;
+  text-align: right;
+}
+
+.menu__contenido {
+}
+
+.menu__pie-pagina {
+  background-color: var(--color-naranja, #f7941d);
+  padding: 24px;
+}
+.menu__pie-pagina-contenido {
+  background-color: var(--color-linea, #1e3a8a);
+  color: #fff;
+  text-align: center;
+  padding: 24px;
 }

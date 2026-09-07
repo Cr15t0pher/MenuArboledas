@@ -3,101 +3,159 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Arboledas de las Quintas - Menú</title>
   </head>
   <body>
     <header class="menu__encabezado">
-      <h1 class="menu__titulo">TACOS Y QUESADILLAS</h1>
+      <div class="menu__titulo-fila">
+        <span class="menu__lineas menu__lineas--izquierda"></span>
+        <h1 class="menu__titulo">TACOS Y QUESADILLAS</h1>
+        <span class="menu__lineas menu__lineas--derecha"></span>
+      </div>
     </header>
-    <main class="menu__contenido">
-      <section class="categoria">
-        <h2 class="categoria__nombre">TACOS</h2>
-        <ul class="categoria__lista">
-          <li class="platillo">
-            <span class="platillo__nombre">TACOS</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$60</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">TACOS SIN CAPEAR</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$75</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">TACOS DE PULPO</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$70</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">TACOS DE PULPO SIN CAPEAR</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$80</span>
-          </li>
-        </ul>
-      </section>
-      <section class="categoria">
-        <h2 class="categoria__nombre">QUESADILLAS</h2>
-        <ul class="categoria__lista">
-          <li class="platillo">
-            <span class="platillo__nombre">QUESADILLAS</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$80</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">QUESADILLAS S/CAPEAR</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$90</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">QUESADILLA PULPO</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$85</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">QUESADILLA PULPO</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$95</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre">QUESADILLA SENCILLA</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$45</span>
-          </li>
-        </ul>
-      </section>
-      <section class="categoria">
-        <h2 class="categoria__nombre">BEBIDAS</h2>
-        <li class="platillo platillo--doble">
-          <span class="platillo__nombre">AGUAS FRESCAS</span>
-          <span class="platillo__linea"></span>
-          <span class="platillo__precios">
-            <span>$20</span>
-            <span>$30</span>
-          </span>
-        </li>
-      </section>
-      <section class="categoria">
-        <h2 class="categoria__nombre">Extras</h2>
-        <ul class="categoria__lista">
-          <li class="platillo">
-            <span class="platillo__nombre">TORTILLA</span>
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$5</span>
-          </li>
-          <li class="platillo">
-            <span class="platillo__nombre"
-              >INGREDIENTE EXTRA Y/O COMBINACIONES</span
-            >
-            <span class="platillo__linea"></span>
-            <span class="platillo__precio">$10</span>
-          </li>
-        </ul>
-      </section>
-    </main>
+    <div class="menu">
+      <main class="menu__contenido">
+        <section class="categoria">
+          <h2 class="categoria__nombre">TACOS</h2>
+          <ul class="categoria__lista">
+            <li class="platillo">
+              <span class="platillo__nombre"
+                >TACOS
+                <span class="platillo__nota"
+                  >( CAMARON, MARLIN Y PESCADO )</span
+                >
+              </span>
+
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$60</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">TACOS SIN CAPEAR</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$75</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">TACOS DE PULPO</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$70</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">TACOS DE PULPO SIN CAPEAR</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$80</span>
+            </li>
+          </ul>
+        </section>
+        <section class="categoria">
+          <h2 class="categoria__nombre">QUESADILLAS</h2>
+          <ul class="categoria__lista">
+            <li class="platillo">
+              <span class="platillo__nombre">QUESADILLAS</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$80</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">QUESADILLAS S/CAPEAR</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$90</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">QUESADILLA PULPO</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$85</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">QUESADILLA PULPO</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$95</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre">QUESADILLA SENCILLA</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$45</span>
+            </li>
+          </ul>
+        </section>
+        <section class="categoria">
+          <h2 class="categoria__nombre">BEBIDAS</h2>
+          <div class="categoria__encabezado-precios">
+            <span>CHICA</span>
+            <span>LITRO</span>
+          </div>
+          <ul class="categoria__lista">
+            <li class="platillo platillo--doble">
+              <span class="platillo__nombre">AGUAS FRESCAS</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precios">
+                <span>$20</span>
+                <span>$30</span>
+              </span>
+            </li>
+            <li class="platillo platillo--doble">
+              <span class="platillo__nombre">AGUA FRESCA EMBOTELLADA</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precios">
+                <span>-</span>
+                <span>$30</span>
+              </span>
+            </li>
+            <li class="platillo platillo--doble">
+              <span class="platillo__nombre">REFRESCOS Y TE JAZTEA</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precios">
+                <span>-</span>
+                <span>$30</span>
+              </span>
+            </li>
+            <li class="platillo platillo--doble">
+              <span class="platillo__nombre">AGUA NATURAL</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precios">
+                <span>-</span>
+                <span>$30</span>
+              </span>
+            </li>
+            <li class="platillo platillo--doble">
+              <span class="platillo__nombre">JUGO DE NARANJA</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precios">
+                <span>$70</span>
+                <span>$120</span>
+              </span>
+            </li>
+          </ul>
+        </section>
+        <section class="categoria">
+          <h2 class="categoria__nombre">Extras</h2>
+          <ul class="categoria__lista">
+            <li class="platillo">
+              <span class="platillo__nombre">TORTILLA</span>
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$5</span>
+            </li>
+            <li class="platillo">
+              <span class="platillo__nombre"
+                >INGREDIENTE EXTRA Y/O COMBINACIONES</span
+              >
+              <span class="platillo__linea"></span>
+              <span class="platillo__precio">$10</span>
+            </li>
+          </ul>
+        </section>
+      </main>
+    </div>
     <footer class="menu__pie-pagina">
-      <p>Servicio ordene y recoja</p>
-      <a href="">6671956312</a>
+      <div class="menu__pie-pagina-contenido">
+        <p>Servicio ordene y recoja</p>
+        <a href="#">6671956312</a>
+      </div>
     </footer>
   </body>
 </html>
