@@ -52,6 +52,7 @@ body {
   color: #ffffff;
   font-size: 2.8rem;
   font-weight: 400;
+  margin: 15px 0 15px;
   font-family: var(--fuente-titulos);
   text-shadow: 2px 2px 5px #a55e07;
 }
@@ -160,16 +161,15 @@ body {
 
 @media (max-width: 700px) {
   .categoria__lista {
-    padding: 0px 3px 0 3px;
+    padding: 0px 10px 0 10px;
   }
 
   .menu__pie-pagina {
-    background-image: none; /* apaga la curva */
-    background-color: var(--color-naranja, #f7941d); /* naranja sólido */
+    background-image: none;
+    background-color: var(--color-naranja, #f7941d);
     position: relative;
-    padding: 10px; /* puede quedarse, no estorba */
+    padding: 10px;
     min-height: 0;
-    /* min-height y max-width probablemente ya no hacen falta aquí */
   }
 
   .menu__pie-pagina-contenido {
@@ -188,6 +188,7 @@ body {
 
   .categoria__encabezado-precios {
     font-size: 0.9rem;
+    padding: 0px 8px 0 0px;
   }
   .platillo__nombre {
     font-size: 1rem;
@@ -204,5 +205,14 @@ body {
   .contenedorimagen img {
     width: 90%;
     height: auto;
+  }
+
+  .categoria__nombre {
+    font-size: 2.2rem;
+    padding: 20px 40px 10px 40px;
+  }
+
+  .menu__titulo {
+    font-size: 3rem;
   }
 }
